@@ -5,8 +5,6 @@ import { Hero } from './sections/Hero';
 import { AboutUs } from './sections/AboutUs';
 import { Specialties } from './sections/Specialties';
 import { Gallery } from './sections/Gallery';
-import { Reservation } from './sections/Reservation';
-import { Reviews } from './sections/Reviews';
 import { Footer } from './sections/Footer';
 import { CartDrawer } from './components/CartDrawer';
 import { Dish } from './types';
@@ -159,12 +157,6 @@ export default function App() {
 
       {/* 5. Impressive Gallery Visual Panel */}
       <Gallery />
-
-      {/* 6. Reservation Seating Booker */}
-      <Reservation />
-
-      {/* 7. Reviews Customer Opinion Slider */}
-      <Reviews />
 
       {/* 8. Footer Contacts & Hours */}
       <Footer />

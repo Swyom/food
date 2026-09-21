@@ -23,7 +23,7 @@ export const Reviews: React.FC = () => {
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-amber-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
-        
+
         {/* Header Title */}
         <div className="text-center mb-12">
           <AnimatedSection animation="fade-up" delay={0.1}>
@@ -34,9 +34,9 @@ export const Reviews: React.FC = () => {
               </span>
               <span className="w-6 h-[1px] bg-amber-500" />
             </div>
-            
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white tracking-wide">
-              Selected Guest Appreciations
+
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white tracking-wide flex items-center justify-center gap-3">
+              Google Maps Reviews
             </h2>
           </AnimatedSection>
         </div>

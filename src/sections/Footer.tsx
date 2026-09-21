@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-3 font-sans text-xs text-neutral-400 font-light">
             <div className="flex gap-3 items-start">
               <MapPin className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-              <span>188 Gastronomy Blvd, Metropia, NY 10012, USA</span>
+              <span>Plot No-780, Near, ITER College Rd, Panchasakha Nagar, Dumduma, Bhubaneswar, Odisha 751030</span>
             </div>
             
             <div className="flex gap-3 items-center">

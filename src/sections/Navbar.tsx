@@ -46,8 +46,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCart, cartItemsCount }) =>
     { name: 'ABOUT US', target: 'about' },
     { name: 'MENU', target: 'menu' },
     { name: 'GALLERY', target: 'gallery' },
-    { name: 'RESERVATION', target: 'reservation' },
-    { name: 'REVIEWS', target: 'reviews' },
   ];
 
   return (
@@ -94,45 +92,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCart, cartItemsCount }) =>
 
           {/* Interactive Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            {/* Cart Icon Toggle */}
-            <Magnet range={20}>
-              <button
-                onClick={onOpenCart}
-                className="relative p-2.5 text-neutral-300 hover:text-amber-500 transition-colors bg-neutral-900 border border-neutral-800 rounded-full cursor-pointer"
-              >
-                <ShoppingBag className="w-4 h-4" />
-                {cartItemsCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-amber-500 text-neutral-950 font-bold text-[10px] w-4.5 h-4.5 rounded-full flex items-center justify-center animate-bounce">
-                    {cartItemsCount}
-                  </span>
-                )}
-              </button>
-            </Magnet>
-
-            {/* Book table */}
-            <Magnet range={30} sensitivity={0.3}>
-              <button
-                onClick={() => scrollToSection('reservation')}
-                className="bg-amber-500 hover:bg-amber-600 text-neutral-950 font-bold text-xs tracking-widest px-6 py-3 rounded-md transition-all shadow-md active:scale-95 cursor-pointer font-sans"
-              >
-                BOOK YOUR MEAL  
-              </button>
-            </Magnet>
           </div>
 
           {/* Mobile Navigation Toggle */}
           <div className="flex lg:hidden items-center gap-3">
-            <button
-              onClick={onOpenCart}
-              className="relative p-2.5 text-neutral-300 bg-neutral-900 border border-neutral-800 rounded-full"
-            >
-              <ShoppingBag className="w-4 h-4" />
-              {cartItemsCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-amber-500 text-neutral-950 font-bold text-[9px] w-4 h-4 rounded-full flex items-center justify-center">
-                  {cartItemsCount}
-                </span>
-              )}
-            </button>
             <button
               onClick={() => setMobileMenuOpen(true)}
               className="p-2 text-neutral-300 hover:text-amber-500 transition-colors bg-neutral-900 border border-neutral-800 rounded-full"
@@ -180,15 +143,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCart, cartItemsCount }) =>
           </div>
 
           <div className="flex flex-col gap-4">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                scrollToSection('reservation');
-              }}
-              className="bg-amber-500 text-neutral-950 font-sans font-bold text-center tracking-widest p-4 rounded-md w-full"
-            >
-              BOOK A TABLE
-            </button>
             <p className="text-center font-sans text-xs text-neutral-500">
               For inquiries: reservations@flavoro.com
             </p>

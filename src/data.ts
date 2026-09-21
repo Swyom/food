@@ -1,5 +1,12 @@
 import { Dish, Review, GalleryItem } from './types';
 
+import creamyAlfredoImg from './assets/images/creamy_alfredo_1781958600642.jpg';
+import beefBurgerImg from './assets/images/beef_burger_1781958615596.jpg';
+import grilledSalmonImg from './assets/images/grilled_salmon_1781958630357.jpg';
+import chocolateLavaCakeImg from './assets/images/chocolate_lava_cake_1781958645636.jpg';
+import restaurantInteriorImg from './assets/images/restaurant_interior_1781958580832.jpg';
+import heroSteakGourmetImg from './assets/images/hero_steak_gourmet_1781958560784.jpg';
+
 export const DISHES: Dish[] = [
   {
     id: 'd1',
@@ -28,7 +35,7 @@ export const DISHES: Dish[] = [
     name: 'Creamy Alfredo Pasta',
     description: 'Rich fettuccine tossed in dynamic double cream, aged parmesan cheese sauce, loaded with fresh minced garlic and flat-leaf parsley.',
     price: 12.99,
-    image: '/src/assets/images/creamy_alfredo_1781958600642.jpg',
+    image: creamyAlfredoImg,
     category: 'mains',
     isPopular: true,
     preparationTime: '15 mins',
@@ -39,7 +46,7 @@ export const DISHES: Dish[] = [
     name: 'Classic Beef Burger',
     description: 'Succulent double smash beef patties, melted sharp cheddar, vine-ripened tomatoes, crisp romaine, and caramelized onions on toasted brioche.',
     price: 11.99,
-    image: '/src/assets/images/beef_burger_1781958615596.jpg',
+    image: beefBurgerImg,
     category: 'mains',
     isPopular: true,
     preparationTime: '12 mins',
@@ -50,7 +57,7 @@ export const DISHES: Dish[] = [
     name: 'Grilled Salmon Fillet',
     description: 'Perfectly pan-seared King salmon, crispy skin, served with roasted green asparagus spears, fresh lemon segment, and dill butter sauce.',
     price: 15.99,
-    image: '/src/assets/images/grilled_salmon_1781958630357.jpg',
+    image: grilledSalmonImg,
     category: 'mains',
     isPopular: true,
     preparationTime: '18 mins',
@@ -61,7 +68,7 @@ export const DISHES: Dish[] = [
     name: 'Molten Chocolate Lava Cake',
     description: 'Decadent dark chocolate sponge cake with liquid fudge center, served warm with vanilla bean gelato and a fresh organic strawberry.',
     price: 6.99,
-    image: '/src/assets/images/chocolate_lava_cake_1781958645636.jpg',
+    image: chocolateLavaCakeImg,
     category: 'desserts',
     isPopular: true,
     preparationTime: '14 mins',
@@ -94,25 +101,25 @@ export const DISHES: Dish[] = [
 export const GALLERY: GalleryItem[] = [
   {
     id: 'g1',
-    image: '/src/assets/images/creamy_alfredo_1781958600642.jpg',
+    image: creamyAlfredoImg,
     caption: 'Fettuccine Alfredo cooked with premium aged parmesan.',
     category: 'dishes',
   },
   {
     id: 'g2',
-    image: '/src/assets/images/restaurant_interior_1781958580832.jpg',
+    image: restaurantInteriorImg,
     caption: 'Our elegant and intimate main dining setup.',
     category: 'interior',
   },
   {
     id: 'g3',
-    image: '/src/assets/images/hero_steak_gourmet_1781958560784.jpg',
+    image: heroSteakGourmetImg,
     caption: 'Prime ribeye cuts seared by master chefs.',
     category: 'dishes',
   },
   {
     id: 'g4',
-    image: '/src/assets/images/beef_burger_1781958615596.jpg',
+    image: beefBurgerImg,
     caption: 'Juicy artisan burgers assembled on buttered brioche.',
     category: 'dishes',
   },
@@ -133,25 +140,25 @@ export const GALLERY: GalleryItem[] = [
 export const REVIEWS: Review[] = [
   {
     id: 'r1',
-    author: 'Sarah Jenkins',
-    role: 'Local Food Critic',
-    text: 'Flavoro has redefined casual fine dining in our neighborhood. The Grilled Salmon was exceptionally moist, and the moody, elegant interior feels like a true oasis.',
+    author: 'Google User 1',
+    role: 'Local Guide · 15 reviews',
+    text: '[Paste Google Review Here] The ambiance here is incredible! Loved the atmosphere and the food was great. I highly recommend trying this place out.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 'r2',
-    author: 'David Vance',
-    role: 'Gourmet Enthusiast',
-    text: 'Unbelievable flavors. The truffle garlic bread combined with their classic beef burger makes for a highly satisfying feast. Plus, the service was wonderfully prompt and warm.',
+    author: 'Google User 2',
+    role: 'Local Guide · 42 reviews',
+    text: '[Paste Google Review Here] Excellent service and a beautiful interior. The food came out quickly and tasted amazing.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150',
   },
   {
     id: 'r3',
-    author: 'Elena Rostova',
-    role: 'Travel blogger',
-    text: 'Finding premium food combined with this level of cozy atmosphere is rare. The Chocolate Lava Cake literally flows with liquid cocoa perfection. Highly recommended!',
+    author: 'Google User 3',
+    role: '3 reviews',
+    text: '[Paste Google Review Here] A fantastic hidden gem. We went there for dinner and it exceeded our expectations. Will definitely be back!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150',
   },
