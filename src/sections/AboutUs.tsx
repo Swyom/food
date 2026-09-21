@@ -1,4 +1,5 @@
 import React from 'react';
+import restaurantInteriorImg from '../assets/images/restaurant_interior_1781958580832.jpg';
 import { AnimatedSection } from '../components/AnimatedSection';
 
 export const AboutUs: React.FC = () => {
@@ -49,7 +50,7 @@ export const AboutUs: React.FC = () => {
               {/* Main Image Frame */}
               <div className="relative z-10 p-2.5 bg-neutral-950 border border-neutral-800 rounded-2xl shadow-2xl overflow-hidden aspect-video transform-gpu hover:scale-[1.01] transition-transform duration-500">
                 <img
-                  src="/src/assets/images/restaurant_interior_1781958580832.jpg"
+                  src={restaurantInteriorImg}
                   alt="Cozy Ambient Bistro Dining Room"
                   className="w-full h-full object-cover rounded-xl brightness-90 saturate-[1.05]"
                   referrerPolicy="no-referrer"

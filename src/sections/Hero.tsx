@@ -1,4 +1,5 @@
 import React from 'react';
+import heroGourmetImg from '../assets/images/hero_steak_gourmet_1781958560784.jpg';
 import { ChevronsDown } from 'lucide-react';
 import { SplitText } from '../components/SplitText';
 import { Magnet } from '../components/Magnet';
@@ -16,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu }) => {
       {/* Background Image with Zoom and Blur */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_steak_gourmet_1781958560784.jpg"
+          src={heroGourmetImg}
           alt="Gourmet Dining Background"
           className="w-full h-full object-cover scale-105 filter brightness-45 contrast-105 transform-gpu"
           referrerPolicy="no-referrer"
